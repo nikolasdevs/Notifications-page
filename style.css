@@ -1,0 +1,159 @@
+:root {
+  --primary-Red: hsl(1, 90%, 64%);
+  --primary-Blue: hsl(219, 85%, 26%);
+
+  --neutral-White: hsl(0, 0%, 100%);
+  --neutral-Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --neutral-Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-Grayish-blue: hsl(219, 14%, 63%);
+  --neutral-Dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-Very-dark-blue: hsl(224, 21%, 14%);
+
+  --pry-font: "Plus Jakarta Sans", sans-serif;
+
+  --fw-500: 500;
+  --fw-800: 800;
+}
+
+.fw-500 {
+  font-weight: var(--fw-500);
+}
+.fw-800 {
+  font-weight: var(--fw-800);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--pry-font);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  background-color: var(--neutral-White);
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left-header h1 {
+  font-size: 1rem;
+}
+
+.left-header p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--primary-Blue);
+  color: var(--neutral-White);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#mark {
+  cursor: pointer;
+}
+#mark:hover {
+  color: var(--primary-Blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--neutral-Very-light-grayish-blue);
+  padding: 1rem;
+}
+
+.profile-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-name:hover {
+  cursor: pointer;
+  color: var(--primary-Blue);
+}
+
+.post {
+  color: var(--neutral-Dark-grayish-blue);
+  cursor: pointer;
+}
+.post:hover {
+  color: var(--primary-Blue);
+}
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-Red);
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+.days {
+  color: var(--neutral-Grayish-blue);
+}
+
+.club {
+  color: var(--primary-Blue);
+  cursor: pointer;
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
+.message {
+  border: 1px solid var(--neutral-Light-grayish-blue-2);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.img-comment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.image {
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  img {
+    width: 48px;
+  }
+}
